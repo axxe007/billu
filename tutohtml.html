@@ -1,0 +1,127 @@
+<!-- this doc is everything taught on html in lecture
+   1 of CS50 web-development course  -->
+<!DOCTYPE html>
+<head>
+    <title>
+        Ujjwal's page
+    </title>
+    <!-- 
+    <style>
+             if we were to work with multiple html files and still want all of them 
+            have these style properties then we have to use something else called link 
+            now i am gonna put h1{}  tag file in comment and add link method here just below comment
+            h1 {
+            color:blue;
+            text-align: center;
+        
+        
+    </style>}  -->
+    <style>
+        ol li{
+            color:red;
+        }
+        /* if we want only a specific sention of form to have a style then we use */
+        input[type="text"]{
+            color:blueviolet;
+            background-color:peru ;
+        }
+    </style>
+    <!-- if we want only the immediate children to have color red then we use
+    ol>li{color:red;} -->
+
+     <link rel="stylesheet" href="styles.css">
+    <body>
+        <h1>
+            Gandu's leveling- of highest level
+        </h1>
+        <h6>
+            Gandu's leveling- of smallest level
+        </h6>
+        Unordered list
+        <ul>
+            <li>shit_happens to ujjwal</li>
+            <li>shit_happens_twice to ujjwal</li>
+        </ul>
+        Ordered list
+        <ol>
+            <li>good stuff happens to ujjwal</li>
+            <li>good stuff 2 ujjwal</li>
+        </ol>
+        <img src="fucku2.jpg" width=20% >
+        <form>
+            <input type="text" placeholder="your views on ujjwal" name="Name">
+            <button>Submit</button>
+        </form> 
+        <!-- the style we use below can also be done in <head> tag and since we chose color
+            below it is going to be the way we mentioned in it regardless of what we wrote it in
+        head tag -->
+        <h1 style="color:rgb(225, 0, 255);text-align:center";>welcome Fucking noobs</h1>
+        <!-- darkmagenta is good color i like that we can choose color from hex code and common
+        names also -->
+        <p> this area belongs to all retards over the net</p>
+        <p>oopsi retaard alert!</p>
+        <!-- id's can be given to each element and i
+        specified id's in styles.css file -->
+        <div id="top">
+            u came <span class="name">back</span> fuckers
+        </div>
+        <div id="middle">
+            not allowed for <span class="name">retards</span> to come back
+        </div>
+        <div id="bottom">
+            still there is hope for everyone
+        </div>
+        <table>
+            <tr>
+                <th>first heading</th>
+                <th>second heading</th>
+                <th>third heading</th>
+            </tr>
+            <tr>
+                <td>meow</td>
+                <td>meowmeow</td>
+                <td>mewmew</td>
+            </tr>
+            <tr>
+                <td>bow</td>
+                <td>bowbow</td>
+                <td>bbbb</td>
+            </tr>
+        </table>
+        <!-- below this are new edits from lecture 2 -->
+        <form>
+            <div>
+                <input name="name" type="text" placeholder="Name">
+                <input name="password" type="password" placeholder="password">
+            </div>
+            <div>
+                Favourite color?
+                <input name="color" type="radio" value="red">Red
+                <input name="color" type="radio" value="yellow">yellow
+                <input name="color" type="radio" value="blue">Blue
+                <input name="color" type="radio" value="Other">Other
+            </div>
+            <div>
+                <input name="country" list="countries" placeholder="Country">
+                <datalist id="countries">
+                    <option value="apple">
+                    <option value="banana">
+                    <option value="cat">    
+                </datalist> 
+            </div>
+        </form>
+        <ol>
+            <li>Pariatur ad in ullamco tempor incididunt cupidatat.</li>
+            <li>Voluptate ea do ipsum ex fugiat ad dolore labore.</li>
+            <li>Tempor anim veniam eiusmod officia sunt esse laboris mollit.</li>
+            <li>
+                <ul>
+                    <li>Ea mollit officia consequat ea officia reprehenderit qui laboris culpa ad occaecat id amet cillum.</li>
+                    <li>Nostrud dolore labore amet ipsum.</li>
+                    <li>Est commodo officia in ipsum voluptate deserunt cupidatat laborum ad fugiat quis aute veniam.</li>
+                </ul>
+            </li>
+        </ol>
+        <button>clickme</button>
+    </body>
+</head>

@@ -1,0 +1,127 @@
+<!-- all the codes written here refer to lecture 2
+of CS50 webdevelopment course -->
+<!DOCTYPE html>
+<head>
+    <title>ujjwal's webpage</title>
+    <!-- the below code is used to keep website from shrinking small on mobile devices or 
+    devices having small screen -->
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a::before{
+            content: "\21d2 Click here";
+            font-weight: bold;
+        }
+        p::selection{
+            color:red;
+            background-color: yellow;
+        }
+        @media print{
+            .screen-only{
+                display: none;
+            }
+        }
+        @media(min-width:500px){
+            body{
+                background-color: pink;
+            }
+        }
+        @media(max-width:499px){
+            body{
+                background-color: rgb(0, 255, 191);
+            }
+        }
+        @media(max-width: 499px){
+            h1::before{
+                content:"hello, this is ujjwal da kotha ";
+            }
+        }
+        @media(min-width: 500px){
+            h1::before{
+                content:"hey ujju ";
+            }
+        }
+        /* using flex-wrap for better styling in below lines of code*/
+        .container{
+            display:flex;
+            flex-wrap:wrap;
+        }
+        .container>div{
+            background-color:springgreen;
+            font-size: 20px;
+            margin:20px;
+            padding:20px;
+            width:200px;
+        }
+        .grid{
+            background-color: green;
+            display: grid;
+            padding: 20px;
+            grid-column-gap:20px;
+            grid-row-gap:10px;
+            grid-template-columns: 200px 200px auto;
+        }
+        .grid-items{
+            background-color: white;
+            font-size:20px;
+            padding:20px;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <h1>we are pleased that u are here</h1>
+        <ul>
+            <li><a href="tutohtml.html">clickhere</a></li>
+            <li></li><a href="#section1">section1</a></li>
+            <li></li><a href="#section2">section2</a></li>
+            <li></li><a href="#section3">section3</a></li>
+        </ul>
+        <h2 id="section1">
+            section1
+        </h2>
+        <p>
+            Culpa velit non ipsum magna cillum commodo nulla minim ullamco. Magna laborum enim amet fugiat eu qui nostrud ex laboris velit ea ex eiusmod. Eiusmod sint tempor et dolore mollit nulla consectetur. Ea exercitation ex nulla reprehenderit nostrud enim ex sit. Est non ipsum adipisicing do nostrud consequat consequat sit. Velit reprehenderit sunt cillum aliqua veniam aliquip aliquip commodo enim nostrud occaecat quis pariatur.
+        </p>
+        <h2 id="section2">
+            section2
+        </h2>
+        <p>
+            Minim proident voluptate laborum Lorem veniam ut cupidatat anim. Voluptate magna magna consequat non reprehenderit consectetur culpa. Culpa est aliqua elit pariatur pariatur eu eu aliquip veniam occaecat eiusmod sunt labore sit. Adipisicing eiusmod minim et ipsum tempor sint exercitation labore elit commodo veniam incididunt aliqua.
+        </p>
+        <h2 id="section3">
+            section3
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit possimus alias neque, odio nisi aspernatur, hic repellat aut nulla asperiores at! Velit, praesentium. Voluptas, enim deleniti. Voluptatibus ut porro temporibus?
+        </p>
+        <p class="screen-only">this won't be visible when printing. helpful when we want to print page and don't want some content</p>
+        <div class="container">
+            <div>A. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident beatae iusto, culpa, nemo quos illum ut debitis, nisi ipsa tempore dolore perspiciatis molestias soluta consectetur ratione eligendi alias magni quaerat.
+            </div>
+            <div>
+                B. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quae expedita quia necessitatibus earum illum? Similique ipsam labore quaerat dolorem facere dignissimos necessitatibus, dicta expedita officiis provident voluptatibus, id molestiae!
+            </div>
+            <div>
+                C. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae est similique molestiae dignissimos quod at explicabo laboriosam exercitationem doloribus, quae inventore quibusdam, quisquam quos reprehenderit, molestias odit quo eaque ut?
+            </div>
+            <div>D. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium natus dolor quas, reprehenderit soluta velit veritatis corrupti quis laboriosam consectetur nostrum dicta eligendi molestiae perspiciatis iure repellendus. Enim, aperiam nemo.</div>
+            <div>
+                E. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eius eum facere commodi cum quaerat dolorem perferendis reprehenderit voluptatibus necessitatibus at dolorum repellendus quas, earum sapiente. Hic perferendis nulla provident!
+            </div>
+            <div>F. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia aliquid, quis explicabo sit soluta ex molestias! Numquam, quis culpa itaque porro iusto quos cum nemo mollitia modi. Veritatis, perspiciatis.</div>
+            <div>G. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea ut nostrum, ducimus reprehenderit alias fugiat, praesentium quibusdam obcaecati accusantium nobis autem deleniti eligendi modi ratione laboriosam perspiciatis fugit totam eos?</div>
+            <div>H. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, reiciendis illo sunt harum cumque similique perferendis mollitia deserunt impedit quia optio dolorum! In ut sed tempore ipsam qui consequuntur voluptatum?</div>
+        </div>  
+        <div class="grid">
+            <div class="grid-items">1</div>
+            <div class="grid-items">16</div>
+            <div class="grid-items">5</div>
+            <div class="grid-items">4</div>
+            <div class="grid-items">3</div>
+            <div class="grid-items">2</div>
+            <div class="grid-items">2</div>
+            <div class="grid-items">1</div>
+            <div class="grid-items">1</div>
+        </div>
+    </body>
+
+</head>

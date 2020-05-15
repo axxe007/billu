@@ -1,0 +1,64 @@
+/* this file is meant for lecture 1 of CS50 web development. h1 is for largest heading in html*/
+h1{
+    color:blue;
+    text-align: center;
+}
+
+/* we can add as much properties as we want to be used in our html file */
+/* p is for paragraph */
+p{
+    color:red;
+}
+/* div(division) is section of my code. That i want to do some particular stuff */
+/* div can be used to specify the size,color,background etc of the page 
+width and height values can be in pixels,%, and dependent also
+color can be in hex code also*/
+div{
+    background-color: orchid;
+    width: max-content;
+    height: max-content;
+    margin:40px; 
+ /* margin makes a invisible border around the content of defined pixels */
+    padding:30px;
+    /* as the name suggests, padding adds a layer of pad aroung the text of specified properties */
+    font-family: Arial, Helvetica, sans-serif;
+    /* we use multiple font style, if in case user's browser doesn't understand 1 the other fonts can be
+    deployed so first font is your choice and other's are some common fonts which one will definitly have 
+    font-size: 28px;
+    font-weight: bold;
+    border: 3px dotted blue;*/
+}
+/* th = table header, td = table data */
+th,td{
+    border:1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+table{
+    border:2px solid black;
+    border-collapse: collapse;
+    /* multiple borderlines merge together */
+    width:50%;
+}
+#top{
+    font-size: 36px;
+}
+#middle{
+    font-size: 24px;
+}
+#bottom{
+    font-size: 12px;
+}
+/* .file in css means class */
+.name{
+    font-weight: bold;
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color:red;
+    font-size: 24;
+}
+button:hover{
+    background-color: blue;
+}
